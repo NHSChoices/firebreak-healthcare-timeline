@@ -1,0 +1,28 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }   
+}
+
+.navbar-empty {
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.left-logo {
+    float: left;
+}
+
+.navless-container {
+    padding: 65px 15px;
+    margin-top: 50px;
+}
+
+.login-box {
+    padding: 15px;
+}
+
+.footer-links a {
+    margin-right: 15px;
+}
