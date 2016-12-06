@@ -22,24 +22,94 @@
 <![endif]-->
 </head>
 <body>
-    <div class="container">
-        <header class="navbar navbar-fixed-top navbar-empty">
+    <nav class="navbar navbar-default navbar-fixed-top white-background">
+        <div class="container dark-blue-background">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Health A-Z</a>
+                    </li>
+                    <li>
+                        <a href="#">Live Well</a>
+                    </li>
+                    <li>
+                        <a href="#">Care and support</a>
+                    </li>
+                    <li>
+                        <a href="#">Health News</a>
+                    </li>
+                    <li>
+                        <a href="#">Services near you</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-bell"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Logged in as <strong>John Smith</strong></a>
+                    </li>
+                    <li>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="fluid-container">
+        <div class="container brand-header blue-background">
+            <div class="left-logo">
+                <img src="img/inverted-choices-logo.png" height="35px" alt="NHS Choices">
+            </div>            
+        </div>
+    </div>
+    <!--<div class="container">-->
+        <!--<header class="navbar navbar-fixed-top navbar-empty">
         <div class="container">
             <div class="left-logo">
                 <img src="img/choices-logo.gif" alt="NHS Choices">
             </div>
         </div>    
-        </header>
+        </header>-->
         <div class="container navless-container">
             <div class="content">
                 <div class="row">
-                    <div class="col-sm-5 pull-right">
+                    <div class="col-sm-7">
+                        <h1>Compare my fitness</h1>
+                        <p>
+                            <strong>
+                                Sign in or Register today to track your fitness, share, and compare with others.
+                            </strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="#">Upload data from a range of devices</a>
+                            </li>
+                            <li>
+                                <a href="#">Update your Public Health Record</a>
+                            </li>
+                            <li>
+                                <a href="#">Track your progression over time</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5">
                         <div>
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation">
+                                <li class="active" role="presentation">
                                     <a data-toggle="tab" href="#login-pane" role="tab">Sign in</a>
                                 </li>
-                                <li class="active" role="presentation">
+                                <li role="presentation">
                                     <a data-toggle="tab" href="#register-pane" role="tab">Register</a>
                                 </li>
                             </ul>
@@ -64,8 +134,8 @@
                                                 <a href="#">Forgot your password?</a>
                                             </div>
                                             </div>
-                                            <div class="submit-container">
-                                                <input class="btn btn-save" type="submit" value="Sign in">
+                                            <div>
+                                                <input class="btn btn-save blue-btn" type="submit" value="Sign in">
                                             </div>
                                         </form>
                                     </div>
@@ -73,35 +143,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-7 pull-left">
-                        <h1>Compare my fitness</h1>
-                        <p>
-                            <strong>
-                                Sign in or Register today to track your fitness, share, and compare with others.
-                            </strong>
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="#">Upload data from a range of devices</a>
-                            </li>
-                            <li>
-                                <a href="#">Update your Public Health Record</a>
-                            </li>
-                            <li>
-                                <a href="#">Track your progression over time</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <hr class="footer-fixed">
+    <!--</div>-->
     <div class="container">
+        <hr class="footer-fixed">
         <div class="footer-links">
-            <a href="#">Contact us</a>
-            <a href="#">About us</a>
-            <a href="#">NHS.UK</a>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">NHS.UK</a>
+                </li>
+            </ul>
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

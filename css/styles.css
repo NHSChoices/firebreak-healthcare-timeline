@@ -16,7 +16,6 @@
 
 .navless-container {
     padding: 65px 15px;
-    margin-top: 50px;
 }
 
 .login-box {
@@ -28,12 +27,47 @@
     color: #fff;
 }
 
+.footer-links {
+    padding-left: 15px;
+}
+
 .footer-links a {
     margin-right: 15px;
 }
 
-.profile-page {
-    padding-top: 70px; 
+body {
+    padding-top: 50px; 
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ECF0F1;
+}
+
+.brand-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blue-background {
+    background-color: #0064b7;
+}
+
+.dark-blue-background {
+    background-color: #036;
+    color: #fdfefe;
+}
+
+.dark-blue-background, .navbar-default .navbar-nav>li>a {
+    color: #fdfefe;
+}
+
+.white-background {
+    background-color: #fdfefe;
+    border: 0;
+}
+
+.grey-background {
+    background-color: #c9ced2;
 }
 
 .business-card {

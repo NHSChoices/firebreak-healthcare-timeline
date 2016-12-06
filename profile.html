@@ -22,8 +22,8 @@
 <![endif]-->
 </head>
 <body class="profile-page">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top white-background">
+        <div class="container dark-blue-background">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -66,9 +66,11 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="left-logo">
-            <img src="img/inverted-choices-logo.png" height="35px" alt="NHS Choices">
+    <div class="fluid-container">
+        <div class="container brand-header blue-background">
+            <div class="left-logo">
+                <img src="img/inverted-choices-logo.png" height="35px" alt="NHS Choices">
+            </div>            
         </div>
     </div>
     <div class="container">
@@ -123,9 +125,31 @@
     <div class="container">
         <h1>Compare my fitness data tracker</h1>
     </div>
+    <div class="container">
+        <canvas id="fitnessChart" width="960" height="300"></canvas>
+    </div>
+    <div class="container">
+        <hr class="footer-fixed">
+        <div class="footer-links">
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">NHS.UK</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <script src="js/fitnessChart.js"></script>
 </body>
 </html>
