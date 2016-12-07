@@ -1,6 +1,22 @@
 @media (min-width: 1200px) {
     .container {
         max-width: 960px;
+    }
+    
+    .border-right {
+        border-right: 1px solid #eee;
+    }   
+}
+
+@media (min-width: 992px) {
+    .border-right {
+        border-right: 1px solid #eee;
+    }   
+}
+
+@media (min-width: 768px) {
+    .border-right {
+        border-right: 1px solid #eee;
     }   
 }
 
@@ -8,6 +24,10 @@
     height: 50px;
     background: #fff;
     border-bottom: 1px solid #eee;
+}
+
+.user-icon {
+    padding-right: 5px;
 }
 
 .left-logo {
