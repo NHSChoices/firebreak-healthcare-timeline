@@ -70,8 +70,9 @@ body {
     background-color: #c9ced2;
 }
 
-.business-card {
+.busniess-card {
     padding-top: 10px;
+    padding-left: 10px;
     border-left: 4px solid #0064b7;
     background-color: #e4f1fd;
     height: 165px;
