@@ -1,0 +1,132 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .border-right {
+        border-right: 1px solid #eee;
+    }   
+}
+
+@media (min-width: 992px) {
+    .border-right {
+        border-right: 1px solid #eee;
+    }   
+}
+
+@media (min-width: 768px) {
+    .border-right {
+        border-right: 1px solid #eee;
+    }   
+}
+
+.navbar-empty {
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.user-icon {
+    padding-right: 5px;
+}
+
+.left-logo {
+    float: left;
+}
+
+.navless-container {
+    padding: 65px 15px;
+}
+
+.login-box {
+    padding: 15px;
+}
+
+.blue-btn {
+    background-color: #0064b7;
+    color: #fff;
+}
+
+.footer-links {
+    padding-left: 15px;
+}
+
+.footer-links a {
+    margin-right: 15px;
+}
+
+body {
+    padding-top: 50px; 
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ECF0F1;
+}
+
+.brand-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blue-background {
+    background-color: #0064b7;
+}
+
+.dark-blue-background {
+    background-color: #036;
+    color: #fdfefe;
+}
+
+.dark-blue-background, .navbar-default .navbar-nav>li>a {
+    color: #fdfefe;
+}
+
+.white-background {
+    background-color: #fdfefe;
+    border: 0;
+}
+
+.grey-background {
+    background-color: #c9ced2;
+}
+
+.business-card {
+    padding-top: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #0064b7;
+    background-color: #e4f1fd;
+    height: 165px;
+}
+
+.user {
+    display: inline-block;
+    height: 96px;
+    width: 96px;
+    overflow: hidden;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    margin-bottom: 10px;
+    background-size: 106px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url(../img/default-user.png);
+    transition: opacity 0.075s;
+}
+
+.user-info {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+    padding-bottom: 7px;
+}
+
+.user-info, .form-group {
+    margin-bottom: 10px;
+}
+
+.blue-btn:hover, .blue-btn:focus {
+    color: #ECF0F1;
+}

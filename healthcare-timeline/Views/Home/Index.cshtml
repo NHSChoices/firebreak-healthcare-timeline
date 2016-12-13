@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model healthcare_timeline.Models.LoginViewModel
+<div class="container navless-container">
+
+
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-7">
+                <h1>Compare my fitness</h1>
+                <p>
+                    <strong>
+                        Sign in or Register today to track your fitness, share, and compare with others.
+                    </strong>
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">Upload data from a range of devices</a>
+                    </li>
+                    <li>
+                        <a href="#">Update your Public Health Record</a>
+                    </li>
+                    <li>
+                        <a href="#">Track your progression over time</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-5">
+                <div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active" role="presentation">
+                            <a data-toggle="tab" href="#login-pane" role="tab">Sign in</a>
+                        </li>
+                        <li role="presentation">
+                            <a data-toggle="tab" href="#register-pane" role="tab">Register</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="login-box active" role="tabpanel">
+                            <div>
+                                <section id="loginForm">
+                                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = "Profile/Index" }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                                        @Html.AntiForgeryToken()
+                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Email)
+                                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control top" })
+                                            @Html.ValidationMessageFor(m => m.Email, "")
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Password)
+                                            @Html.PasswordFor(m => m.Password, new { @class = "form-control bottom" })
+                                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+      
+                                        </div>
+
+                                        <div class="checkbox">
+                                            @Html.CheckBoxFor(m => m.RememberMe)
+                                            @Html.LabelFor(m => m.RememberMe)
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <input type="submit" value="Log in" class="btn btn-save blue-btn" />
+                                        </div>
+                                    }
+                                </section> 
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
