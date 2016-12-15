@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1>Compare my fitness</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 pull-left">
+            <div class="business-card">
+                <div class="user"></div>
+                <div class="user-info">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">John Smith</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age: 42</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_updated">Last updated: October 2016</label>
+                        </div>
+                        <div>
+                            <input class="btn btn-save blue-btn" type="submit" value="Upload new data">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 pull-right">
+            <div class="business-card">
+                <div class="user"></div>
+                <div class="user-info">
+                    <form>
+                        <div class="form-group">
+                            <label for="doc_name">Dr Larry Pepper</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="pratice_address">Puddle Lane Surgery</label>
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                        </div>
+                        <div>
+                            <input class="btn btn-save blue-btn" type="submit" value="Send data to PHR">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pull-left">
+            <div class="healthcare-card">
+
+                <div class="healthcare-info">
+                    <form method="post">
+                        <div class="form-group">
+                            <label></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_height">Height</label>
+                            <input type="text" id="user_height" name="Height"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_weight">Weight</label>
+                            <input type="text" id="user_weight" name="Weight"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_weightdate">Weight Date</label>
+                            <input type="text" id="user_weightdate" name="WeightDate" />
+                        </div>
+                        <div class="form-group">
+                            <label for="user_dailysteps">Daily steps</label>
+                            <input type="text" id="user_dailysteps" name="DailySteps"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_dailystepsdate">Daily steps Date</label>
+                            <input type="text" id="user_dailystepsdate" name="DailyStepsDate" />
+                        </div>
+
+                        <div class="form-group">
+                            <label></label>
+                        </div>
+
+                        @if (ViewBag.Success)
+                        {
+                            <div> Fitness details saved</div>
+                        }
+
+                        <div>
+                            <input class="btn btn-save blue-btn" type="submit" value="Save data">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Compare my fitness data tracker</h2>
+</div>
+<div class="container">
+    @if (ViewBag.ArrayData.Count > 0)
+    {
+        <script>
+            var arraydata = [@string.Join("," ,  ViewBag.ArrayData)];
+        </script>
+    }
+    <canvas id="fitnessChart" width="960" height="300"></canvas>
+</div>
+
+
+

@@ -12,7 +12,9 @@
             <div class="business-card">
                 <div class="user"></div>
                 <div class="user-info">
-                    <form>
+
+                    @using (Html.BeginForm("Update","Profile",FormMethod.Get))
+                    {
                         <div class="form-group">
                             <label for="name">John Smith</label>
                         </div>
@@ -25,7 +27,8 @@
                         <div>
                             <input class="btn btn-save blue-btn" type="submit" value="Upload new data">
                         </div>
-                    </form>
+                    }
+
                 </div>
             </div>
         </div>
@@ -50,12 +53,19 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <div class="container">
     <h2>Compare my fitness data tracker</h2>
 </div>
 <div class="container">
+    @if (ViewBag.ArrayData.Count > 0)
+    {
+        <script>
+            var arraydata = [@string.Join("," ,  ViewBag.ArrayData)];
+        </script>
+    }
     <canvas id="fitnessChart" width="960" height="300"></canvas>
 </div>
 
